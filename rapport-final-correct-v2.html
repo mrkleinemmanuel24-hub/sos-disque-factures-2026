@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Disque — Réconciliation Factures FINALE CORRIGÉE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 { font-size: 36px; margin-bottom: 10px; }
+        h2 { font-size: 24px; margin: 30px 0 20px; }
+        .alert {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid;
+        }
+        .alert-success { background: #d4edda; border-color: #28a745; color: #155724; }
+        .alert-warning { background: #fff3cd; border-color: #ffc107; color: #856404; }
+        .alert-error { background: #f8d7da; border-color: #dc3545; color: #721c24; }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .card-title { font-size: 18px; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .stat-number { font-size: 28px; font-weight: 700; color: #667eea; }
+        .stat-label { font-size: 12px; color: #999; margin-top: 8px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin: 15px 0;
+        }
+        th { background: #f8f9fa; padding: 12px; text-align: left; font-weight: 600; border-bottom: 1px solid #e0e0e0; }
+        td { padding: 12px; border-bottom: 1px solid #f0f0f0; }
+        tr:hover { background: #f9f9f9; }
+        .todo {
+            background: #f9f9f9;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .todo-title { font-weight: 600; margin-bottom: 8px; }
+        ul { margin-left: 20px; margin-top: 10px; }
+        li { margin: 8px 0; }
+        footer {
+            background: #f9f9f9;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 60px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .highlight { background: #ffffcc; padding: 2px 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 SOS Disque — Réconciliation Factures FINALE CORRIGÉE</h1>
+            <p style="font-size: 14px; margin-top: 10px;">Données réelles • Matching complet • Plan d'action</p>
+        </header>
+
+        <div class="alert alert-success">
+            <strong>✅ Analyse Réelle (Corrigée)</strong><br/>
+            352 transactions Qonto • 209 avec PDF (59,4%) • 143 manquantes (40,6%) • Excel de matching disponible
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">352</div>
+                <div class="stat-label">Transactions Qonto</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">209</div>
+                <div class="stat-label">Avec PDF</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">143</div>
+                <div class="stat-label">Sans PDF</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">59,4%</div>
+                <div class="stat-label">Couverture</div>
+            </div>
+        </div>
+
+        <h2>📋 Inventaire Complet des PDFs</h2>
+
+        <div class="card">
+            <div class="card-title">PDFs Trouvés par Source</div>
+            <table>
+                <tr>
+                    <th>Source</th>
+                    <th>PDFs</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td><strong>Anthropic</strong></td>
+                    <td>154</td>
+                    <td>✅ Extraits d'emails</td>
+                </tr>
+                <tr>
+                    <td><strong>Qonto Export (02/05)</strong></td>
+                    <td>82</td>
+                    <td>✅ Export official</td>
+                </tr>
+                <tr>
+                    <td><strong>Google Ads</strong></td>
+                    <td>29</td>
+                    <td>✅ Téléchargés</td>
+                </tr>
+                <tr>
+                    <td><strong>Stripe</strong></td>
+                    <td>22</td>
+                    <td>✅ Paiements</td>
+                </tr>
+                <tr style="background: #f0f0f0; font-weight: bold;">
+                    <td>TOTAL PDFS</td>
+                    <td colspan="2">287 PDFs</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>❌ Les 143 Transactions Manquantes</h2>
+
+        <div class="alert alert-error">
+            <strong>143 transactions Qonto n'ont PAS de PDF correspondant</strong><br/>
+            Cela représente 40,6% des transactions. Voir <span class="highlight">MATCHING-TRANSACTIONS-vs-PDFs.xlsx</span> pour la liste complète.
+        </div>
+
+        <div class="card">
+            <div class="card-title">Causes Probables des 143 Manquants</div>
+            <ul style="margin: 15px 0;">
+                <li><strong>Transactions sans justificatif:</strong> Virements internes, frais, ajustements</li>
+                <li><strong>Factures externes non archivées:</strong> Autres fournisseurs (Reddit, PayPal, Twilio, etc.)</li>
+                <li><strong>Export Qonto incomplet?</strong> Export du 02/05 pourrait ne pas couvrir TOUTES les transactions de la période</li>
+                <li><strong>PDFs non nommés clairement:</strong> Certains PDFs pourraient exister mais ne matchent pas avec le nom du fournisseur</li>
+            </ul>
+        </div>
+
+        <h2>📌 Plan d'Action (Pour le Comptable)</h2>
+
+        <div class="todo">
+            <div class="todo-title">🔴 PRIORITÉ 1: Valider les 143 Manquants</div>
+            <ul>
+                <li><strong>À faire IMMÉDIATEMENT:</strong>
+                    <ul>
+                        <li>Ouvrir le fichier <span class="highlight">MATCHING-TRANSACTIONS-vs-PDFs.xlsx</span></li>
+                        <li>Filtrer les 143 lignes avec ❌ NON</li>
+                        <li>Identifier lesquelles ont un justificatif attendu</li>
+                        <li>Chercher les PDFs manquants dans les archives (mail, téléchargements, etc.)</li>
+                    </ul>
+                </li>
+                <li><strong>Questions clés:</strong>
+                    <ul>
+                        <li>Ces 143 transactions DEVRAIENT-ELLES avoir un PDF?</li>
+                        <li>Sont-ce des opérations internes (transferts, frais) sans justificatif?</li>
+                        <li>Les PDFs existent-ils mais mal archivés?</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="todo">
+            <div class="todo-title">🟡 PRIORITÉ 2: Récupérer les PDFs des 143 Fournisseurs</div>
+            <ul>
+                <li><strong>Stratégie par fournisseur:</strong> Chercher sur chaque portail (Google Ads, Reddit, PayPal, Twilio, etc.)</li>
+                <li><strong>Fournisseurs identifiés dans les 143:</strong>
+                    <ul>
+                        <li>Google ADS (hold temporaires)</li>
+                        <li>PayPal (plusieurs)</li>
+                        <li>Reddit (plusieurs)</li>
+                        <li>Twilio, Ikoula, Resend, etc.</li>
+                    </ul>
+                </li>
+                <li><strong>Montant estimé des 143 transactions:</strong> À calculer une fois les fournisseurs identifiés</li>
+            </ul>
+        </div>
+
+        <div class="todo">
+            <div class="todo-title">🔵 PRIORITÉ 3: Archivage Final</div>
+            <ul>
+                <li>Une fois les 143 PDFs trouvés, les intégrer dans la structure</li>
+                <li>Mettre à jour le fichier Excel</li>
+                <li>Exporter le récapitulatif final pour présentation comptable</li>
+            </ul>
+        </div>
+
+        <h2>📂 Fichiers Disponibles</h2>
+
+        <div class="card">
+            <div class="card-title">Livrables pour Comptable</div>
+            <ul style="margin: 15px 0;">
+                <li><strong>MATCHING-TRANSACTIONS-vs-PDFs.xlsx</strong> — <span class="highlight">★ À OUVRIR EN PREMIER ★</span><br/>
+                    Liste complète des 352 transactions avec statut du PDF (OUI/NON), source et nom du fichier.
+                </li>
+                <li><strong>QONTO-82-PDFs.zip</strong> — Export officiel Qonto (82 factures)</li>
+                <li><strong>ANTHROPIC-154-PDFs.zip</strong> — Factures Anthropic extraites (154 factures)</li>
+                <li><strong>GOOGLE-ADS-29-PDFs.zip</strong> — Factures Google Ads (29 factures)</li>
+                <li><strong>rapport-final-correct-v2.html</strong> — Ce rapport</li>
+            </ul>
+        </div>
+
+        <h2>🎯 Résumé pour Jeudi (Comptable)</h2>
+
+        <div class="card">
+            <div class="card-title">Ce qui est Certain</div>
+            <ul style="margin: 15px 0;">
+                <li>✅ 352 transactions Qonto identifiées (XLS fourni)</li>
+                <li>✅ 287 PDFs récupérés de 4 sources principales</li>
+                <li>✅ 209 transactions matchées avec un PDF</li>
+                <li>❌ 143 transactions n'ont pas de PDF trouvé (40,6%)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Ce qui Reste à Faire</div>
+            <ul style="margin: 15px 0;">
+                <li>Déterminer si ces 143 transactions DEVRAIENT avoir un PDF</li>
+                <li>Chercher les PDFs manquants auprès des fournisseurs</li>
+                <li>Valider montants et fournisseurs</li>
+                <li>Finaliser l'import Qonto une fois complet</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p><strong>SOS Disque</strong> — Réconciliation Factures 2026</p>
+            <p>Généré: 12 Juin 2026 — Analyse définitive basée sur 352 transactions Qonto + 287 PDFs trouvés</p>
+        </footer>
+    </div>
+</body>
+</html>
